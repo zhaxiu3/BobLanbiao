@@ -39,28 +39,17 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/Program Files (x86)/Unity4.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Unity4.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/Program Files (x86)/Unity4.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Unity4.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AvatarsDemo\PointMan\PointManController.cs" />
      <Compile Include="Assets\BobWaveDetector\DebugCubePosition.cs" />
+     <Compile Include="Assets\BobWaveDetector\GLLineRenderer.cs" />
      <Compile Include="Assets\BobWaveDetector\TimedBuffer.cs" />
-     <Compile Include="Assets\GesturesDemo\Scripts\GesturesDemoScript.cs" />
-     <Compile Include="Assets\KinectScripts\AvatarController.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsFilter.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\ClippedLegsFilter.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\JointPositionsFilter.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\KinectHelper.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\TimedLerp.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\TrackingStateFilter.cs" />
-     <Compile Include="Assets\KinectScripts\KinectManager.cs" />
-     <Compile Include="Assets\KinectScripts\KinectWrapper.cs" />
+     <Compile Include="Assets\BobWaveDetector\WaveGesture.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

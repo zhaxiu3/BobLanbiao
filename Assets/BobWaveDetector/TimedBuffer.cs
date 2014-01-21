@@ -29,6 +29,10 @@ public class TimedBuffer<T> {
         }
     }
 
+    public List<T> getData()
+    {
+        return mdataBuffer;
+    }
     public void AddData(T data)
     {
         mdataBuffer.Add(data);
@@ -38,6 +42,11 @@ public class TimedBuffer<T> {
             mdataBuffer.RemoveAt(0);
             mtimeStamp.RemoveAt(0);
         }
+    }
+    public void RemoveRange(int begin, int end)
+    {
+        mdataBuffer.RemoveRange(begin, end);
+        mtimeStamp.RemoveRange(begin, end);
     }
     public void Clear()
     {
